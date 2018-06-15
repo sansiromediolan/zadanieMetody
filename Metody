@@ -1,0 +1,7 @@
+package first_package;
+
+public class Metody {
+	public double iloraz(double a, double b){
+	return a/b;
+	}		
+}
