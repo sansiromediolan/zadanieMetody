@@ -1,0 +1,47 @@
+package first_package;
+
+import java.util.Scanner;
+import java.awt.*;
+
+public class ZadaniaMetody{
+ 
+   public static void main(String[] args){
+	    double a, b;
+        Scanner input = new Scanner (System.in);
+        System.out.println("Podaj pierwsza liczbe (argument a metody iloraz) do obliczenia ilorazu: ");
+        a=input.nextDouble();
+        System.out.println("Podaj druga liczbe (argument b metody iloraz) do obliczenia ilorazu: ");
+        b=input.nextDouble();
+        
+		Metody wynikIlorazu = new Metody();
+    	double wynik = wynikIlorazu.iloraz(a, b);
+    	System.out.printf("Wynik ilorazu liczb: " + a + " i " + b + " wynosi: " + "%.2f\n\n",wynik);
+		
+		double[] tablica, tablica1;
+		  tablica = new double[10];
+		  for(int i=0; i<tablica.length; i++)
+			  tablica[i] = (a++ + 1);
+		  
+		  tablica1 = new double[10];
+		  for(int i=0; i<tablica.length; i++)
+			  tablica1[i] = (b++ + 1);
+
+	      int licznik=0;
+	      while(licznik<tablica.length){
+//	         System.out.print(tablica[licznik]+" ");
+	         licznik++;
+	      }
+	          
+	      int licznik1=0;
+	      while(licznik1<tablica1.length){
+//	         System.out.print(tablica1[licznik1]+" ");
+	         licznik1++;
+	      }
+  
+	     double iloraz1, wynik1;
+	     for(int i=0; i<tablica.length; i++) {
+	  	     wynik1=tablica[i]/tablica1[i];
+	  	     System.out.printf("Wynik ilorazu liczb: " + tablica[i] + " i " + tablica1[i] + " wynosi: " + "%.2f\n",wynik1);
+	         }
+    }
+}
