@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class ZadanieMetody1_2{
       static double iloraz(double a, double b){
-        return a/b;
-       }
+      return a/b;
+      }
  
  
    public static void main(String[] args){
-	    double a, b, wynik;
+	double a, b, wynik;
         Scanner input = new Scanner (System.in);
         System.out.println("Podaj pierwsza liczbe (argument a metody iloraz) do obliczenia ilorazu: ");
         a=input.nextDouble();
@@ -26,7 +26,7 @@ public class ZadanieMetody1_2{
 		  
 		  tablica1 = new double[10];
 		  for(int i=0; i<tablica.length; i++)
-              tablica1[i] = (b++ + 1);
+             		 tablica1[i] = (b++ + 1);
 
 	          int licznik=0;
 	          while(licznik<tablica.length){
@@ -42,8 +42,8 @@ public class ZadanieMetody1_2{
   
 	        double iloraz1, wynik1;
 	  		for(int i=0; i<tablica.length; i++) {
-	  	          wynik1=tablica[i]/tablica1[i];
-	  			  System.out.printf("Wynik ilorazu liczb: " + tablica[i] + " i " + tablica1[i] + " wynosi: " + "%.2f\n",wynik1);
+	  	        wynik1=tablica[i]/tablica1[i];
+	  		System.out.printf("Wynik ilorazu liczb: " + tablica[i] + " i " + tablica1[i] + " wynosi: " + "%.2f\n",wynik1);
 	              }
     }
 }
