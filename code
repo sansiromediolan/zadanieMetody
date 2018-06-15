@@ -6,7 +6,7 @@ import java.awt.*;
 public class ZadaniaMetody{
  
    public static void main(String[] args){
-	    double a, b;
+	double a, b;
         Scanner input = new Scanner (System.in);
         System.out.println("Podaj pierwsza liczbe (argument a metody iloraz) do obliczenia ilorazu: ");
         a=input.nextDouble();
